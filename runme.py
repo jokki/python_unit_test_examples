@@ -1,4 +1,5 @@
 from static_class import StaticClass
+from instance_class import InstanceClass
 
 ##  TODO
 #   [ ] Multiple mocks (illustrate inverted order of mock names...)
@@ -6,11 +7,18 @@ from static_class import StaticClass
 #       https://docs.python.org/3/library/unittest.mock-examples.html#side-effect-functions-and-iterables
 #   [ ] Setup/teardown
 
-def main():
+def useStaticClass():
     StaticClass.staticMethod()
     StaticClass.staticMethodWithStringArg("Hello World!")
     StaticClass.staticMethodWithNumArg(45)
-    #print("Done!")
+
+def useInstanceClass():
+    x = InstanceClass()
+    dontcare = x.multiArgInstanceMethod(1, 2)
+    return x.someInstanceMethod(99)
+
+def main():
+   print("Done!")
 
 if __name__ == "__main__":
      main()
