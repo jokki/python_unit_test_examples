@@ -6,3 +6,6 @@ class StaticClass():
     def staticMethodWithStringArg(s):
         pass
 
+    def staticMethodWithNumArg(s):
+        pass
+

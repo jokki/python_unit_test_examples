@@ -19,6 +19,11 @@ class TestStaticMethods(unittest.TestCase):
         runme.main()
         mockStaticMethodWithStringArg.assert_called_once_with("Hello World!")
 
+    @patch('runme.StaticClass.staticMethodWithNumArg')
+    def test_callStaticMethodWithNumArg(self, mockStaticMethodWithNumArg):
+        runme.main()
+        mockStaticMethodWithNumArg.assert_called_once_with(45)
+
 if __name__ == '__main__':
     unittest.main()
 
