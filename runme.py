@@ -18,7 +18,9 @@ def useInstanceClass():
     return x.someInstanceMethod(99)
 
 def main():
-   print("Done!")
+    useStaticClass()
+    dontcare = useInstanceClass()
+    print("Done!")
 
 if __name__ == "__main__":
      main()
