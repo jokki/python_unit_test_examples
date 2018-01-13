@@ -3,9 +3,10 @@ from instance_class import InstanceClass
 
 ##  TODO
 #   [ ] Multiple mocks (illustrate inverted order of mock names...)
-#   [ ] Mock return value sequence
-#       https://docs.python.org/3/library/unittest.mock-examples.html#side-effect-functions-and-iterables
+#   [ ] Exceptions
 #   [ ] Setup/teardown
+#   [ ] Alternative to 'patch' when mocking
+#   [ ] Document usage in README
 
 def useStaticClass():
     StaticClass.staticMethod()
@@ -16,6 +17,15 @@ def useInstanceClass():
     x = InstanceClass()
     dontcare = x.multiArgInstanceMethod(1, 2)
     return x.someInstanceMethod(99)
+
+def addStuff():
+    result = 0
+    x = InstanceClass()
+
+    for n in range(0, 3):
+        result = result + x.getNext()
+
+    return result
 
 def main():
     useStaticClass()

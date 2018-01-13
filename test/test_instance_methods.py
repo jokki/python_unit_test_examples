@@ -53,5 +53,10 @@ class TestInstanceMethods(unittest.TestCase):
         result = runme.useInstanceClass()
         mockMultiArgInstanceMethod.assert_called_once_with(1, 2)
 
+    @patch('runme.InstanceClass.getNext')
+    def test_multiCall(self, mockGetNext):
+        mockGetNext.side_effect = [4, 5, 6]
+        self.assertEqual(15, runme.addStuff(), "Wrong result!")
+
 if __name__ == '__main__':
     unittest.main()

@@ -6,3 +6,6 @@ class InstanceClass():
     def multiArgInstanceMethod(self, a, b):
         pass
 
+    def getNext(self):
+        pass
+
