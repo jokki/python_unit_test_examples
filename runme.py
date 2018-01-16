@@ -27,6 +27,12 @@ def addStuff():
 
     return result
 
+def useBoth():
+    x = InstanceClass()
+    StaticClass.staticMethodWithStringArg("Hello Another World!")
+    x.someInstanceMethod(11)
+
+
 def main():
     useStaticClass()
     dontcare = useInstanceClass()
