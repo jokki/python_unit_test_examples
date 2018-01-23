@@ -8,6 +8,9 @@ from instance_class import InstanceClass
 #   [ ] Alternative to 'patch' when mocking
 #   [ ] Document usage in README
 
+class RunMeException(Exception):
+    pass
+
 def useStaticClass():
     StaticClass.staticMethod()
     StaticClass.staticMethodWithStringArg("Hello World!")
@@ -32,6 +35,8 @@ def useBoth():
     StaticClass.staticMethodWithStringArg("Hello Another World!")
     x.someInstanceMethod(11)
 
+def functionThatThrowsException():
+    raise RunMeException("This is an exception")
 
 def main():
     useStaticClass()
