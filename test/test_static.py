@@ -4,6 +4,12 @@ import runme
 
 class TestStaticMethods(unittest.TestCase):
 
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
     @unittest.skip("Demonstrating skipping")
     def test_failMe(self):
         ## Test will produce a 's' in test output to denote the skipped test
