@@ -4,7 +4,7 @@ from instance_class import InstanceClass
 ##  TODO
 #   [ ] Multiple mocks (illustrate inverted order of mock names...)
 #   [X] Exceptions
-#   [ ] Setup/teardown
+#   [X] Setup/teardown
 #   [X] Alternative to 'patch' when mocking
 #   [ ] Document usage in README
 

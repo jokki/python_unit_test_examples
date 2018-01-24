@@ -4,6 +4,14 @@ import runme
 
 class TestInstanceMethods(unittest.TestCase):
 
+    def setUp(self):
+        ## Whatever goes here gets run before every test case
+        pass
+
+    def tearDown(self):
+        ## Whatever goes here gets run after every test case
+        pass
+
     @patch('runme.InstanceClass')
     def test_constructor(self, mockInstanceClass):
         runme.useInstanceClass()

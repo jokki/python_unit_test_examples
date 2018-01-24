@@ -5,6 +5,14 @@ import runme
 
 class TestInstanceMethodsAlternative(unittest.TestCase):
 
+    def setUp(self):
+        ## Whatever goes here gets run before every test case
+        pass
+
+    def tearDown(self):
+        ## Whatever goes here gets run after every test case
+        pass
+
     def test_alternativeMockingConstruct(self):
         with patch.object(instance_class.InstanceClass, 'someInstanceMethod',
                                 return_value = 'Mocked result') as mockSomeInstanceMethod:
