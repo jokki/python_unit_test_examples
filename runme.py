@@ -3,9 +3,9 @@ from instance_class import InstanceClass
 
 ##  TODO
 #   [ ] Multiple mocks (illustrate inverted order of mock names...)
-#   [ ] Exceptions
+#   [X] Exceptions
 #   [ ] Setup/teardown
-#   [ ] Alternative to 'patch' when mocking
+#   [X] Alternative to 'patch' when mocking
 #   [ ] Document usage in README
 
 class RunMeException(Exception):
