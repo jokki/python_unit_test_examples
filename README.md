@@ -14,11 +14,11 @@ More generally, you can run tests from anywhere
     
 Assuming you are in the project root of this project, you can run a specific test suite like this
 
-    $ PYTHONPATH=$PYTHONPATH:. python test/test_exception.py
+    $ PYTHONPATH=$PYTHONPATH:. python test/test_instance_methods.py
     
 Or, a specific test case of a specific test suite like this
 
-    $ PYTHONPATH=$PYTHONPATH:. python test/test_exception.py TestException.test_exception
+    $ PYTHONPATH=$PYTHONPATH:. python test/test_instance_methods.py TestInstanceMethods.test_instanceMethodArg
     
 Adding current path "." to 'PYTHONPATH' seems to be necessary or the Python interpreter won't find the code under test.
 
