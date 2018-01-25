@@ -2,7 +2,7 @@ from static_class import StaticClass
 from instance_class import InstanceClass
 
 ##  TODO
-#   [ ] Multiple mocks (illustrate inverted order of mock names...)
+#   [X] Multiple mocks (illustrate inverted order of mock names...)
 #   [X] Exceptions
 #   [X] Setup/teardown
 #   [X] Alternative to 'patch' when mocking
